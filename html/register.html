@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    
+    <form style="border: 1px solid" name="deliveryform" method="POST">
+        <div class="container">
+        <h1>Register Here</h1>
+        <p>Please enter your information to sign up for the full BeliSkuy Experience!</p>
+        <hr>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" name="uname" id="uname" placeholder="Please enter your username" required>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="email" name="email" id="email" placeholder="Please enter your email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password" id="password" placeholder="Please enter your password" required>
+
+        <label for="confirm_password"><b>Confirm Password</b></label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Please confirm your password" required>
+
+        <label for="birthdate"><b>Birthdate</b></label>
+        <input type="date" name="birthdate" id="birthdate" placeholder="Please enter your birthdate" required>
+
+        <div class="genderContainer">
+            <div class="select_gender_title">
+                <label for="select_gender"><b>Select your gender:</b></label>
+            </div>
+            <div class="gender_radio_male">
+                <input type="radio" name="gender_male" id="gender_male">
+                <label for="gender_male">Male</label>
+            </div>
+            <input type="radio" name="gender_female" id="gender_female">
+            <label for="gender_female">Female</label>
+        </div>
+        
+        <div class="checkboxContainer">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox_button">I agree to terms and conditions.</label>
+        </div>
+
+        <div class="submit">
+           <button type="reset" class="cancelbutton">Reset</button>
+            <button type="submit" class="signupbutton" onclick="registrationValidation()"> Sign Up</button>   
+        </div>
+    </div>
+    </form>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>
